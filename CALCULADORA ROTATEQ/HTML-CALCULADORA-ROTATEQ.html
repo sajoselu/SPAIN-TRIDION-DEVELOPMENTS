@@ -1,0 +1,389 @@
+<div class="content">
+    <header>
+      <div class="top-bar">
+        <div class="top-bar-logos">
+          <div class="top-bar-logos-first"><img src="/static/medicos/images/logo1.png" alt="logo">
+            <p>*Desde la fecha de inicio del estudio pivotal REST, realizado de 2001 a 2004 en 11 países<sup
+                style="font-size: 0.75em;">2</sup></p>
+          </div>
+          <div class="top-bar-logos-second"><img src="/static/medicos/images/logo2.png" alt="logo"></div>
+        </div>
+      </div>
+      <div id="background" class="background">
+        <div class="background-mobile"></div>
+        <div class="background-purple">
+          <p>CALCULADORA PAUTA POSOLÓGICA DE ROTATEQ<sup>&reg;</sup></p>
+          <p>Una forma rápida de calcular los periodos de administración de la vacuna de RotaTeq<sup>&reg;</sup></p>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <p class="intro"><span>Seleccione</span> la dosis de administración de la vacuna que desee calcular</p>
+      <div class="dosisBtns">
+        <div id="dosisBtn1" class="button">Primera</div>
+        <div id="dosisBtn2" class="button">Segunda</div>
+        <div id="dosisBtn3" class="button">Tercera</div>
+      </div>
+      <div id="primera" class="invisible">
+        <div class="primera-text">
+          <p><span>Introduzca</span> la fecha de nacimiento del bebé</p>
+        </div>
+        <div class="primera-datepicker">
+          <input type="date" name="bday" id="datePicker" required min="2015-01-01" max="2025-01-01">
+          <span class="open-button">
+            <button type="button" class="open-button-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.121 29.121">
+                <g fill="#fff">
+                  <path
+                    d="M21.706 6.146c1.116 0 2.02-.898 2.02-2.016V2.02c0-1.119-.903-2.02-2.02-2.02s-2.019.9-2.019 2.02v2.111a2.014 2.014 0 0 0 2.019 2.015z" />
+                  <path
+                    d="M28.882 3.494h-4.066v1.027a3.078 3.078 0 0 1-3.075 3.076 3.076 3.076 0 0 1-3.074-3.076V3.494h-8.205v1.027c0 1.695-1.379 3.076-3.076 3.076s-3.075-1.38-3.075-3.076V3.494L.208 3.443v25.678h26.656l2.049-.006-.031-25.621zm-2.02 23.582H2.26V10.672h24.604v16.404h-.002z" />
+                  <path
+                    d="M7.354 6.146A2.016 2.016 0 0 0 9.375 4.13V2.02C9.375.9 8.47 0 7.354 0S5.336.9 5.336 2.02v2.111c0 1.117.901 2.015 2.018 2.015zM10.468 12.873h3.231v2.852h-3.231zM15.692 12.873h3.234v2.852h-3.234zM20.537 12.873h3.231v2.852h-3.231zM10.468 17.609h3.231v2.85h-3.231zM15.692 17.609h3.234v2.85h-3.234zM20.537 17.609h3.231v2.85h-3.231zM10.468 22.439h3.231v2.85h-3.231zM5.336 17.609h3.229v2.85H5.336zM5.336 22.439h3.229v2.85H5.336zM15.692 22.439h3.234v2.85h-3.234zM20.537 22.439h3.231v2.85h-3.231z" />
+                </g>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="primera-output">
+          <div class="primera-output-text" id="primera-outputDiv">
+
+          </div>
+          <div class="primera-output-dates">
+            <div id="primera-outputDiv2"></div>
+            <!--<div id="primera-outputDiv3"></div>
+                        <div id="primera-outputDiv4"></div>-->
+          </div>
+          <div class="primera-output-alert">
+            <p>La 1ª dosis puede administrarse a partir de las 6 semanas de edad y no mas tarde de la semana
+              12<sup>1</sup></p>
+          </div>
+        </div>
+      </div>
+      <div id="segunda" class="invisible">
+        <div class="segunda-text">
+          <p><span>Introduzca</span> la fecha de nacimiento del bebé</p>
+        </div>
+        <div class="segunda-datepicker">
+          <input type="date" name="bday1" id="datePicker1" required min="2015-01-01" max="2025-01-01">
+          <span class="open-button">
+            <button type="button" class="open-button-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.121 29.121">
+                <g fill="#fff">
+                  <path
+                    d="M21.706 6.146c1.116 0 2.02-.898 2.02-2.016V2.02c0-1.119-.903-2.02-2.02-2.02s-2.019.9-2.019 2.02v2.111a2.014 2.014 0 0 0 2.019 2.015z" />
+                  <path
+                    d="M28.882 3.494h-4.066v1.027a3.078 3.078 0 0 1-3.075 3.076 3.076 3.076 0 0 1-3.074-3.076V3.494h-8.205v1.027c0 1.695-1.379 3.076-3.076 3.076s-3.075-1.38-3.075-3.076V3.494L.208 3.443v25.678h26.656l2.049-.006-.031-25.621zm-2.02 23.582H2.26V10.672h24.604v16.404h-.002z" />
+                  <path
+                    d="M7.354 6.146A2.016 2.016 0 0 0 9.375 4.13V2.02C9.375.9 8.47 0 7.354 0S5.336.9 5.336 2.02v2.111c0 1.117.901 2.015 2.018 2.015zM10.468 12.873h3.231v2.852h-3.231zM15.692 12.873h3.234v2.852h-3.234zM20.537 12.873h3.231v2.852h-3.231zM10.468 17.609h3.231v2.85h-3.231zM15.692 17.609h3.234v2.85h-3.234zM20.537 17.609h3.231v2.85h-3.231zM10.468 22.439h3.231v2.85h-3.231zM5.336 17.609h3.229v2.85H5.336zM5.336 22.439h3.229v2.85H5.336zM15.692 22.439h3.234v2.85h-3.234zM20.537 22.439h3.231v2.85h-3.231z" />
+                </g>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="segunda-text-second">
+          <p><span>Introduzca</span> la fecha de administración de la primera dosis</p>
+        </div>
+        <div class="segunda-datepicker-second">
+          <input type="date" name="2day" id="datePicker2" required min="2015-01-01" max="2025-01-01">
+          <span class="open-button">
+            <button type="button" class="open-button-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.121 29.121">
+                <g fill="#fff">
+                  <path
+                    d="M21.706 6.146c1.116 0 2.02-.898 2.02-2.016V2.02c0-1.119-.903-2.02-2.02-2.02s-2.019.9-2.019 2.02v2.111a2.014 2.014 0 0 0 2.019 2.015z" />
+                  <path
+                    d="M28.882 3.494h-4.066v1.027a3.078 3.078 0 0 1-3.075 3.076 3.076 3.076 0 0 1-3.074-3.076V3.494h-8.205v1.027c0 1.695-1.379 3.076-3.076 3.076s-3.075-1.38-3.075-3.076V3.494L.208 3.443v25.678h26.656l2.049-.006-.031-25.621zm-2.02 23.582H2.26V10.672h24.604v16.404h-.002z" />
+                  <path
+                    d="M7.354 6.146A2.016 2.016 0 0 0 9.375 4.13V2.02C9.375.9 8.47 0 7.354 0S5.336.9 5.336 2.02v2.111c0 1.117.901 2.015 2.018 2.015zM10.468 12.873h3.231v2.852h-3.231zM15.692 12.873h3.234v2.852h-3.234zM20.537 12.873h3.231v2.852h-3.231zM10.468 17.609h3.231v2.85h-3.231zM15.692 17.609h3.234v2.85h-3.234zM20.537 17.609h3.231v2.85h-3.231zM10.468 22.439h3.231v2.85h-3.231zM5.336 17.609h3.229v2.85H5.336zM5.336 22.439h3.229v2.85H5.336zM15.692 22.439h3.234v2.85h-3.234zM20.537 22.439h3.231v2.85h-3.231z" />
+                </g>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="segunda-output">
+          <div class="segunda-output-text" id="segunda-outputDiv">
+
+          </div>
+          <div class="segunda-output-dates">
+            <div id="segunda-outputDiv2"></div>
+            <!--<div id="segunda-outputDiv3"></div>
+                        <div id="segunda-outputDiv4"></div>-->
+          </div>
+          <div class="segunda-output-alert">
+            <p>Debe haber al menos intervalos de 4 semanas entre dosis</p>
+          </div>
+        </div>
+      </div>
+      <div id="tercera" class="invisible">
+        <div class="tercera-text">
+          <p><span>Introduzca</span> la fecha de nacimiento del bebé</p>
+        </div>
+        <div class="tercera-datepicker">
+          <input type="date" name="bday1" id="datePicker3" required min="2015-01-01" max="2025-01-01">
+          <span class="open-button">
+            <button type="button" class="open-button-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.121 29.121">
+                <g fill="#fff">
+                  <path
+                    d="M21.706 6.146c1.116 0 2.02-.898 2.02-2.016V2.02c0-1.119-.903-2.02-2.02-2.02s-2.019.9-2.019 2.02v2.111a2.014 2.014 0 0 0 2.019 2.015z" />
+                  <path
+                    d="M28.882 3.494h-4.066v1.027a3.078 3.078 0 0 1-3.075 3.076 3.076 3.076 0 0 1-3.074-3.076V3.494h-8.205v1.027c0 1.695-1.379 3.076-3.076 3.076s-3.075-1.38-3.075-3.076V3.494L.208 3.443v25.678h26.656l2.049-.006-.031-25.621zm-2.02 23.582H2.26V10.672h24.604v16.404h-.002z" />
+                  <path
+                    d="M7.354 6.146A2.016 2.016 0 0 0 9.375 4.13V2.02C9.375.9 8.47 0 7.354 0S5.336.9 5.336 2.02v2.111c0 1.117.901 2.015 2.018 2.015zM10.468 12.873h3.231v2.852h-3.231zM15.692 12.873h3.234v2.852h-3.234zM20.537 12.873h3.231v2.852h-3.231zM10.468 17.609h3.231v2.85h-3.231zM15.692 17.609h3.234v2.85h-3.234zM20.537 17.609h3.231v2.85h-3.231zM10.468 22.439h3.231v2.85h-3.231zM5.336 17.609h3.229v2.85H5.336zM5.336 22.439h3.229v2.85H5.336zM15.692 22.439h3.234v2.85h-3.234zM20.537 22.439h3.231v2.85h-3.231z" />
+                </g>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="tercera-text-second">
+          <p><span>Introduzca</span> la fecha de administración de la segunda dosis</p>
+        </div>
+        <div class="tercera-datepicker-second">
+          <input type="date" name="2day" id="datePicker4" required min="2015-01-01" max="2025-01-01">
+          <span class="open-button">
+            <button type="button" class="open-button-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.121 29.121">
+                <g fill="#fff">
+                  <path
+                    d="M21.706 6.146c1.116 0 2.02-.898 2.02-2.016V2.02c0-1.119-.903-2.02-2.02-2.02s-2.019.9-2.019 2.02v2.111a2.014 2.014 0 0 0 2.019 2.015z" />
+                  <path
+                    d="M28.882 3.494h-4.066v1.027a3.078 3.078 0 0 1-3.075 3.076 3.076 3.076 0 0 1-3.074-3.076V3.494h-8.205v1.027c0 1.695-1.379 3.076-3.076 3.076s-3.075-1.38-3.075-3.076V3.494L.208 3.443v25.678h26.656l2.049-.006-.031-25.621zm-2.02 23.582H2.26V10.672h24.604v16.404h-.002z" />
+                  <path
+                    d="M7.354 6.146A2.016 2.016 0 0 0 9.375 4.13V2.02C9.375.9 8.47 0 7.354 0S5.336.9 5.336 2.02v2.111c0 1.117.901 2.015 2.018 2.015zM10.468 12.873h3.231v2.852h-3.231zM15.692 12.873h3.234v2.852h-3.234zM20.537 12.873h3.231v2.852h-3.231zM10.468 17.609h3.231v2.85h-3.231zM15.692 17.609h3.234v2.85h-3.234zM20.537 17.609h3.231v2.85h-3.231zM10.468 22.439h3.231v2.85h-3.231zM5.336 17.609h3.229v2.85H5.336zM5.336 22.439h3.229v2.85H5.336zM15.692 22.439h3.234v2.85h-3.234zM20.537 22.439h3.231v2.85h-3.231z" />
+                </g>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="tercera-output">
+          <div class="tercera-output-text" id="tercera-outputDiv">
+
+          </div>
+          <div class="tercera-output-dates">
+            <div id="tercera-outputDiv2"></div>
+            <!--<div id="tercera-outputDiv3"></div>
+                        <div id="tercera-outputDiv4"></div>-->
+          </div>
+          <div class="tercera-output-alert">
+            <p>Debe haber al menos intervalos de 4 semanas entre dosis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+		<div class="ssi-noexpand">
+			
+			<div class="uno-expand">
+				<p class="fRev">Revisión Ficha Técnica: 08/2020</p>
+				<h1>INFORMACIÓN DE SEGURIDAD SELECCIONADA DE de RotaTeq solución oral</h1>
+				<h2>Contraindicaciones</h2>
+				<ul id="l1">
+					<li>Hipersensibilidad al principio activo o a alguno de los excipientes incluidos en la sección 6.1 de la <a target="_blank" title="Ficha Técnica Rotateq (PDF, se abre en ventana nueva)" href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf">ficha técnica</a>.</li>
+					<li>Hipersensibilidad después de una administración previa de vacunas frente a rotavirus.</li>
+	    
+			    </ul>	
+			</div>
+			<div class="dos-expand">
+				<div id="img-expand-ssi"><span class="caret down"></span></div>
+			</div>
+			
+				
+		</div>
+	
+		<div class="ssi-expand" style="display: none !important;">
+
+
+			<div class="uno-expand">
+					<p class="fRev"><span>SSI ROTATEQ</span>Revisión Ficha Técnica: 08/2020</p>
+					<h1>INFORMACIÓN DE SEGURIDAD SELECCIONADA DE de RotaTeq solución oral</h1>
+					<h2>Contraindicaciones</h2>
+					<ul id="l1">
+					<li>Hipersensibilidad al principio activo o a alguno de los excipientes incluidos en la sección 6.1 de la <a target="_blank" title="Ficha Técnica Rotateq (PDF, se abre en ventana nueva)" href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf">ficha técnica</a>.</li>
+					<li>Hipersensibilidad después de una administración previa de vacunas frente a rotavirus.</li>
+					<li>Antecedente previo de invaginación intestinal.</li>
+					<li>Individuos con malformación congénita del tracto gastrointestinal que pudiera predisponer a la invaginación intestinal.</li>
+					<li>Niños con inmunodeficiencia conocida o sospecha de tenerla.</li>
+					<li>La administración de RotaTeq se debe posponer en niños que padecen una enfermedad aguda grave que curse con fiebre. Una infección leve no es una contraindicación para la inmunización</li>
+					<li>La administración de RotaTeq se debe posponer en niños con diarrea aguda o vómitos.</li>
+					</ul>
+					<h2>Advertencias y precauciones especiales de empleo</h2>
+					<h3><u>Trazabilidad</u></h3>
+					<p>Con objeto de mejorar la trazabilidad de los medicamentos biológicos, el nombre y el número de lote del medicamento administrado deben estar claramente registrados.</p>
+					<p>Como con todas las vacunas, siempre se debe disponer del tratamiento médico apropiado en el caso de que ocurra un episodio anafiláctico tras la administración de la vacuna.</p>
+					<p>No se dispone de datos de seguridad o eficacia en ensayos clínicos respecto a la administración de RotaTeq a niños inmunocomprometidos, aquellos expuestos en el útero a un tratamiento inmunosupresor, niños infectados por VIH o niños que han recibido una transfusión de sangre o inmunoglobulinas en los 42 días siguientes a la administración de la dosis. No se espera que una infección asintomática por VIH afecte a la seguridad o eficacia de RotaTeq. Sin embargo, en ausencia de datos suficientes, no se recomienda la administración de RotaTeq a niños con VIH asintomáticos. Se deben valorar cuidadosamente los potenciales beneficios y riesgos de la administración de RotaTeq a niós que han estado expuestos en el útero a un tratamiento inmunosupresor.</p>
+					<p>En la etapa de poscomercialización se han notificado casos de gastroenteritis asociada con el virus de la vacuna en niños con inmunodeficiencia combinada grave (SCID, por sus siglas en inglés, ver sección 4.3 de la <a target="_blank" title="Ficha Técnica Rotateq (PDF, se abre en ventana nueva)" href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf">ficha técnica</a>).</p>
+					<p>En los ensayos clínicos, RotaTeq se excretó en las heces del 8,9% de los vacunados casi exclusivamente en la semana posterior a la dosis 1 y en sólo un vacunado (0,3%) después de la dosis 3. El máximo de excreción se produjo en los 7 días posteriores a la administración de la dosis. Se ha observado en la poscomercialización la transmisión de cepas del virus de la vacuna a contactos no vacunados. RotaTeq se debe administrar con precaución a individuos en contacto estrecho con inmunodeprimidos (por ejemplo, individuos con cáncer o inmunocomprometidos por otra causa o individuos que están recibiendo terapia inmunosupresora). Además, aquéllos que estén al cuidado de recién vacunados deben guardar una higiene cuidadosa, especialmente cuando manipulen heces.</p>
+					<p>En un ensayo clínico, RotaTeq se administró a aproximadamente 1.000 niños que habían nacido a una edad gestacional de 25 a 36 semanas. La primera dosis fue administrada a partir de las 6 semanas después del nacimiento. La seguridad y la eficacia de RotaTeq en este subconjunto de niños fueron equiparables a las de los niños nacidos a término. No obstante, 19 de los aproximadamente 1.000 niños habían nacido a una edad gestacional de 25 a 28 semanas, 55 habían nacido a una edad gestacional de 29 a 31 semanas y el resto había nacido a una edad gestacional de entre 32 y 36 semanas.</p>
+					<h3><u>Invaginación intestinal</u></h3>
+					<p>Como precaución, los profesionales sanitarios deberían realizar un seguimiento de cualquier síntoma indicativo de invaginación intestinal (dolor abdominal grave, vómitos persistentes, sangre en heces, hinchazón abdominal y/o fiebre elevada) ya que los datos procedentes de estudios observacionales indican un aumento en el riesgo de invaginación intestinal, principalmente dentro de los 7 días tras la vacunación frente a rotavirus. Se debe aconsejar a los padres o tutores que informen rápidamente a su profesional sanitario en caso de presentar dichos síntomas</p>
+					<p>Para individuos con predisposición a la invaginación intestinal, ver sección 4.3 de la <a target="_blank" title="Ficha Técnica Rotateq (PDF, se abre en ventana nueva)" href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf">ficha técnica</a>.</p>
+					<p>No se dispone de datos de seguridad o eficacia para niños con enfermedades gastrointestinales activas (incluyendo diarrea crónica) o retraso en el crecimiento. Se puede considerar administrar RotaTeq con precaución en estos niños cuando, en opinión del médico no administrar la vacuna implique un riesgo mayor.</p>
+					<p>El nivel de protección proporcionado por RotaTeq está basado en el cumplimiento de las 3 dosis. Como con cualquier vacuna, la vacunación con RotaTeq puede que no siempre asegure la protección completa de todos los vacunados. RotaTeq no protege frente a las gastroenteritis debidas a otros patógenos diferentes de rotavirus.</p>
+					<p>Se llevaron a cabo ensayos clínicos de eficacia frente a gastroenteritis por rotavirus en Europa, Estados Unidos, Latinoamérica y Asia. Durante estos ensayos, el genotipo circulante más frecuente fue G1P[8], mientras que los genotipos G2P[4], G3P[8], G4P[8] y G9P[8] fueron identificados con menor frecuencia. No se conoce el alcance de la protección que RotaTeq podría proporcionar frente a otros tipos y en otras poblaciones.</p>
+					<p>No se dispone de datos clínicos sobre el uso de RotaTeq para la profilaxis posexposición.</p>
+					<p>Cuando se administre la serie de inmunización primaria en niños prematuros de ≤ 28 semanas de gestación y especialmente en aquéllos con un historial previo de inmadurez respiratoria, se debe considerar tanto el riesgo potencial de apnea como la necesidad de monitorización respiratoria durante 48-72 horas. Como el beneficio de la vacunación es alto en este grupo de niños, la vacunación no se debe impedir ni retrasar.</p>
+					<p>RotaTeq NO SE DEBE INYECTAR BAJO NINGUNA CIRCUNSTANCIA.</p>
+					<h3><u>Sacarosa</u></h3>
+					<p>RotaTeq contiene sacarosa. Los pacientes con intolerancia hereditaria a la fructosa, problemas de absorción de glucosa o galactosa, o insuficiencia de sacarasa-isomaltasa, no deben tomar esta vacuna.</p>
+					<h3><u>Sodio</u></h3>
+					<p>Esta vacuna contiene 37,6 mg de sodio por dosis, equivalente a 1,88% de la ingesta máxima diaria de 2 g de sodio recomendada por la OMS para un adulto.</p>
+					<h2>Reacciones adversas</h2>
+					<h3><u>a. Resumen del perfil de seguridad</u></h3>
+					<p>En un subconjunto de niños procedentes de 3 ensayos clínicos controlados con placebo (n=6.130 recibieron RotaTeq y 5.560 recibieron placebo), se evaluaron todos los efectos adversos de RotaTeq en los 42 días posteriores a la vacunación con o sin uso concomitante de otras vacunas pediátricas. En términos generales, el 47% de los niños a los que se administró RotaTeq experimentó una reacción adversa comparado con el 45,8% de los niños a los que se administró placebo. Las reacciones adversas notificadas más comúnmente y que ocurrieron con mayor frecuencia con la vacuna que con el placebo fueron pirexia (20,9%), diarrea (17,6%) y vómitos (10,1%).</p>
+					<p>Se evaluaron las reacciones adversas graves en todos los participantes (36.150 recibieron RotaTeq y 35.536 recibieron placebo) de 3 ensayos clínicos hasta 42 días después de cada dosis. La frecuencia global de estas reacciones adversas graves fue del 0,1% entre los receptores de RotaTeq y del 0,2% entre los receptores de placebo.</p>
+					<h3><u>b. Tabla de reacciones adversas</u></h3>
+					<table cellspacing="0" cellpadding="0">
+					<col/>
+					<col/>
+					<col/>
+					<tr>
+					<td colspan="3">Reacciones adversas después de la administración de RotaTeq en ensayos clínicos y reacciones adversas notificadas poscomercialización (en cursiva)</td>
+					</tr>
+					<tr>
+					<td>Sistema de clasificación de
+					<br/>
+					órganos</td>
+					<td>Frecuencia</td>
+					<td>Reacciones/Acontecimientos adversos</td>
+					</tr>
+					<tr>
+					<td rowspan="2">Infecciones e infestaciones</td>
+					<td>Frecuentes</td>
+					<td>Infección del tracto respiratorio superior</td>
+					</tr>
+					<tr>
+					<td>Poco frecuentes</td>
+					<td>Nasofaringitis, otitis media</td>
+					</tr>
+					<tr>
+					<td>Trastornos del sistema inmunológico</td>
+					<td>Frecuencia no conocida</td>
+					<td>Reacción anafiláctica‡</td>
+					</tr>
+					<tr>
+					<td>Trastornos respiratorios, torácicos y mediastínicos</td>
+					<td>Raros</td>
+					<td>Broncoespasmo</td>
+					</tr>
+					<tr>
+					<td rowspan="3">Trastornos gastrointestinales</td>
+					<td>Muy frecuentes</td>
+					<td>Diarrea, vómitos</td>
+					</tr>
+					<tr>
+					<td>Poco frecuentes</td>
+					<td>Hematoquecia†, dolor abdominal superior</td>
+					</tr>
+					<tr>
+					<td>Muy raros</td>
+					<td>Invaginación intestinalα*</td>
+					</tr>
+					<tr>
+					<td rowspan="3">Trastornos de la piel y del tejido subcutáneo</td>
+					<td>Poco frecuentes</td>
+					<td>Erupción</td>
+					</tr>
+					<tr>
+					<td>Raros</td>
+					<td>Urticaria†</td>
+					</tr>
+					<tr>
+					<td>Frecuencia no
+					<br/>
+					conocida</td>
+					<td>Angioedema‡</td>
+					</tr>
+					<tr>
+					<td rowspan="2">Trastornos generales y alteraciones en el lugar de administración</td>
+					<td>Muy frecuentes</td>
+					<td>Pirexia</td>
+					</tr>
+					<tr>
+					<td>Frecuencia no
+					<br/>
+					conocida</td>
+					<td>Irritabilidad‡</td>
+					</tr>
+					</table>
+					<p>Las frecuencias se clasifican de la siguiente forma: Muy frecuentes (≥1/10); Frecuentes (≥1/100, &lt;1/10); Poco frecuentes (≥1/1.000, &lt;1/100); Raras (≥1/10.000, &lt;1/1.000); Muy raras (&lt; 1/10.000), No conocida (no puede estimarse a partir de los datos disponibles).</p>
+					<p>† Esta reacción adversa se identificó a través de la vigilancia poscomercialización. La categorización de la frecuencia se estimó de acuerdo a los ensayos clínicos relevantes.
+					<br/>
+					α La categorización de la frecuencia se estimó de acuerdo a datos de un estudio observacional.
+					<br/>
+					* Ver sección 4.4 de la <a target="_blank" title="Ficha Técnica Rotateq (PDF, se abre en ventana nueva)" href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf">ficha técnica</a>.
+					<br/>
+					‡ Los acontecimientos adversos poscomercialización (la frecuencia no puede estimarse a partir de los datos disponibles)</p>
+					<h3><u>c. Descripción de reacciones adversas seleccionadas</u></h3>
+					<p>Se notificó la enfermedad de Kawasaki en 5 casos de los 36.150 receptores de la vacuna (&lt; 0,1%) y 1 de los 35.536 receptores de placebo (&lt; 0,1%), con un riesgo relativo (RR) de 4,9 [IC 95%: 0,6 – 239,1] (no estadísticamente significativo).
+					<br/>
+					No se ha observado ningún aumento del riesgo de la enfermedad de Kawasaki entre los niños que recibieron RotaTeq en un amplio estudio observacional poscomercialización de vigilancia de seguridad.</p>
+					<h3><u>Invaginación intestinal</u></h3>
+					<p>Los datos procedentes de estudios observacionales de seguridad realizados en varios países indican que las vacunas de rotavirus conllevan un aumento en el riesgo de invaginación intestinal, con hasta 6 casos adicionales por 100.000 niños dentro de los 7 días tras la vacunación. Existe evidencia limitada de un menor incremento del riesgo tras la segunda dosis. La incidencia de base de invaginación intestinal en niños menores de 1 año de edad en estos países varía de 25 a 101 por 100.000 niños por año. Aún no está claro si las vacunas de rotavirus afectan a la incidencia global de invaginación intestinal en periodos más largos de seguimiento.</p>
+					<h3><u>d. Otras poblaciones especiales</u></h3>
+					<p>Apnea en niños prematuros de ≤ 28 semanas de gestación.</p>
+					<p>Se ha notificado tras la comercialización gastroenteritis con eliminación de virus vacunal en niños con SCID.</p>
+					<p style="text-align: center"><strong>Para información adicional de seguridad, por favor consulte la <a target="_blank" title="Ficha Técnica Rotateq (PDF, se abre en ventana nueva)" href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf">ficha técnica</a>.</strong></p>	
+
+			</div>
+			<div class="dos-expand">
+				<div id="img-noexpand-ssi"><span class="caret up"></span></div>
+			</div>
+				
+				
+		</div>
+			
+			
+			
+	
+    <footer>
+      <div class="container">
+		
+			
+			
+		
+        <div class="footer-text">
+          <p>Se recomienda que la pauta de vacunación de tres dosis se complete a las 20-22 semanas de edad<sup>1</sup>.
+          </p>
+          <p>Si es necesario, la tercera dosis (la última) se puede administrar hasta las 32 semanas de
+            edad.<sup>1</sup></p>
+          <p>RotaTeq<sup>&reg;</sup> está indicado para la inmunización activa de niños a partir de las 6 semanas a 32
+            semanas de edad para la prevención de la gastroenteritis debida a infección por rotavirus.<sup>1</sup></p>
+          <p>RotaTeq<sup>&reg;</sup> se debe utilizar de acuerdo con las recomendaciones oficiales.<sup>1</sup></p>
+          <p class="margin">Antes de prescribir, dispensar, indicar, usar o autorizar la dispensación de RotaTeq®, por favor consulte su <a href="https://profesionales.msd.es/static/medicos/images/ft_RotaTeq_tcm2308-636732.pdf" target="_blank">ficha técnica</a> y las <a href="https://www.mscbs.gob.es/profesionales/saludPublica/prevPromocion/vacunaciones/home.htm"
+              target="_blank">recomendaciones oficiales vigentes en su Comunidad Autónoma</a></p>
+          <p class="destacado">Consulte la Información de Seguridad: <a href="/medicos/productos/rotateq/ssi-rotateq.xhtml" target="_blank">Información de
+              Seguridad Seleccionada de RotaTeq<sup>&reg;</sup></a></p>
+        </div>
+        <div class="footer-logo clearfix">
+          <div class="footer-logo-text">
+            <p><b>REFERENCIAS:</b> 1. Ficha técnica de RotaTeq® 2. Vesikari T Matson DO, Dennehy P, Van Damme P,
+              Santosham M, Rodriguez Z, et al. Safety and efficacy of a pentavalent human-bovine (WC3) reassortant
+              rotavirus vaccine. N Engl J Med. 2006; 354: 23-33.</p>
+          </div>
+          <div class="footer-logo-img">
+            <div class="text">
+              <p>ES-ROT-00481 - Creado: junio 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-second">
+          <div class="intro">Esta página está destinada exclusivamente a profesionales sanitarios facultados para la
+            prescripción o administración de medicamentos</div>
+          <div class="legal">
+            <div class="logo">
+              <img src="/static/medicos/images/logos_msd_pie.png" alt="logo">
+            </div>
+            <div class="links">
+              <a href="https://www.msdprivacy.com/es/es/index.html" target="_blank">Privacidad</a><a href="https://www.msdprivacy.com/es/es/transparency-and-privacy.html" target="_blank">Derechos sobre Datos
+                Personales</a><a href="/medicos/terminos-y-condiciones-de-uso.xhtml" target="_blank">Términos y Condiciones de Uso</a>
+            </div>
+            <div class="copyright">
+              Copyright &copy; 2020 Merck Sharp & Dohme de España, S.A. C/ Josefa Valcárcel, 38 · 28027 Madrid.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
